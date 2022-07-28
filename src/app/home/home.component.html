@@ -1,0 +1,233 @@
+  <!-- ======= hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <!-- <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+
+          <div class="carousel-inner" role="listbox"> -->
+<!-- 
+            <div class="carousel-item active" style="background-image: url(assets/img/hero-carousel/ba1.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">IT PARTNER</h2>
+                  <p class="animate__animated animate__fadeInUp">Tout ce dont vous avez besoin pour faire évoluerng 
+                    votre entreprise avec un partenaire de confiance.</p>
+                  <a href="#" class="btn-get-started scrollto animate__animated animate__fadeInUp">Espace Client</a>
+                </div>
+              </div>
+            </div> -->
+
+            <!-- <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/2.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">IT PARTNER</h2>
+                  <p class="animate__animated animate__fadeInUp">Tout ce dont vous avez besoin pour faire évoluerng 
+                    votre entreprise avec un partenaire de confiance.</p>
+                  <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item" style="background-image: url(assets/img/hero-carousel/3.jpg)">
+              <div class="carousel-container">
+                <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">IT PARTNER</h2>
+                  <p class="animate__animated animate__fadeInUp">Tout ce dont vous avez besoin pour faire évoluerng 
+                    votre entreprise avec un partenaire de confiance.</p>
+                  <a href="#about" class="btn-get-started scrollto animate__animated animate__fadeInUp">Get Started</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+          </a>
+
+          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+          </a> -->
+
+          <owl-carousel-o [options]="customOptions">
+   
+            <ng-container *ngFor="let slide of slides">
+              <ng-template carouselSlide [id]="slide.id" style="background-image: url({slide.img})">
+                <img style="width: 100%;" [src]="slide.img" >
+                <!-- <div class="container">
+                  <h2 class="animate__animated animate__fadeInDown">{slide.title}</h2>
+                  <p class="animate__animated animate__fadeInUp">{slide.desc}</p>
+                  <a href="#{slide.url}" class="btn-get-started scrollto animate__animated animate__fadeInUp">{slide.btn}</a>
+                </div> -->
+              </ng-template>
+            </ng-container>
+               
+            </owl-carousel-o>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <!-- ======= About Section ======= -->
+  <div id="about" class="about-area area-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <div class="section-headline text-center">
+            <h2>Qui somme-nous ?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- single-well start-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-left">
+            <div class="single-well">
+              <a href="#">
+                <img src="assets/img/about/aboutus.jpg" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- single-well end-->
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="well-middle">
+            <div class="single-well">
+              <a href="/about">
+                <h4 class="sec-head">Dynamix Services</h4>
+              </a>
+              <p>
+                Dynamix Services est une SSII partenaire Microsoft, spécialisée dans l’intégration des ERP :
+              </p>
+              <ul>  
+                <li>
+                  <i class="bi bi-check"></i> Microsoft Dynamics NAV.
+                </li>
+                <li>
+                  <i class="bi bi-check"></i> Microsoft Dynamics 365 Business Central.
+                </li>
+                <li>
+                  <i class="bi bi-check"></i> GMAO (INFOR EAM) Microsoft CRM.
+                </li>
+                <li>
+                  <i class="bi bi-check"></i> la solution BI QlikView
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End col-->
+      </div>
+    </div>
+  </div><!-- End About Section -->
+  
+
+  <!-- Nos valeurs section -->
+	<section class="why-us">
+		<div class="container">
+	        <div class="row">
+				<div class="col-md-8 offset-md-2">
+          <div class="section-headline text-center">
+            <h2>Nos valeurs</h2>
+          </div>
+					<p class="mb-5 text-center">blaaablaaaaa</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>01</span>
+						<h4><a href="#">Compétence</a></h4>
+						<p>Le savoir-faire et les compétences de nos consultants font la richesse de Dynamix et ce pourquoi nous sommes reconnus.
+            </p>
+						<img src="assets/img/background/value.png" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>02</span>
+						<h4><a href="#">Performance</a></h4>
+						<p>La performance fait partie de l’ADN de la société. La performance individuelle et collective est le socle de la solidité de notre croissance soutenue.
+            </p>
+						<img src="assets/img/background/value1.png" alt="">
+					</div>
+				</div>
+        
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>03</span>
+						<h4><a href="#">Courage</a></h4>
+						<p>S’ouvrir à de nouveaux projets, nouveaux environnements, sortir de sa zone de confort, oser être force de proposition chez le client…
+            </p>
+						<img src="assets/img/background/value2.png" alt="">
+					</div>
+				</div>
+
+				<div class="col-sm-6 col-lg-4">
+					<div class="box">
+						<span>04</span>
+						<h4><a href="#">Accomplissement</a></h4>
+						<p>L’accomplissement personnel et professionnel de nos collaborateurs est notre finalité.
+            </p>
+						<img src="assets/img/background/value3.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End nos valeurs Section -->
+
+<!-- Nos secteurs d'activités section -->
+<section>
+  <div class="section-headline text-center">
+    <h2>Nos secteurs d'activités</h2>
+  </div>
+  <div class="carousel__container">
+    <div class="carousel__item">
+      <img src="assets/img/blog/distribution.jpg" class="carousel__image">
+    </div>
+    <div class="carousel__item">
+      <img src="assets/img/blog/industrie.jfif" class="carousel__image">
+    </div>
+    <div class="carousel__item">
+      <img src="assets/img/blog/service.png" class="carousel__image">
+    </div>
+  </div>
+</section>
+
+<!-- Nos secteurs d'activités section -->
+
+<!-- ======= Devis Section ======= -->
+<div class="suscribe-area">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs=12">
+        <div class="suscribe-text text-center">
+          <h3>Obtenez des solutions rapidement</h3>
+          <a class="sus-btn" href="/quote">obtenir un devis ici</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- End Devis Section -->
+
+<!-- Nos produits section -->
+<section>
+  <div class="section-headline text-center">
+    <h2>Nos produits</h2>
+  </div>
+  
+  </section>
+<!-- End nos produits métiers -->
+
+<!-- Pourquoi nous choisir section -->
+<section>
+  <div class="section-headline text-center">
+    <h2> Pourquoi nous choisir ?</h2>
+  </div>
+  
+  </section>
+<!-- end  Pourquoi nous choisir section   -->
